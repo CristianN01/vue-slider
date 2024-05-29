@@ -31,3 +31,12 @@
     text-align: right;
     color: white;
 }
+
+button {
+    padding: 0.25rem 0.75rem;
+    margin: 1rem;
+    background-color: black;
+    color: white;
+    border-radius: 10%;
+    border: 1px solid black;
+}
