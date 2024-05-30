@@ -51,7 +51,7 @@ createApp({
             this.currentSlide = slideIndex;
         },
         startAutoPlay: function(){
-            this.autoPlayClock = setInterval( this.nextImg, 5000);
+            this.autoPlayClock = setInterval( this.nextImg, 10000);
             console.log('autoplay started')
         },
         stopAutoPlay: function(){
