@@ -44,6 +44,9 @@ createApp({
             } else {
                 this.currentSlide = this.slides.length - 1;
             }
+        },
+        changeSlide: function(slideIndex) {
+            this.currentSlide = slideIndex;
         }
     }
   }).mount('#app')

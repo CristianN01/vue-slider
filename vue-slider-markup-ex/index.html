@@ -7,6 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Slider</title>
     <link rel="stylesheet" href="./css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -24,9 +28,27 @@
                     </div>
                 </div>
             </div>
+              
+            <section class="thumbnails">
+                <div class="thumbnail" @click="changeSlide(0)" >
+                    <img src="./img/01.webp" alt="">
+                </div>
+                <div class="thumbnail" @click="changeSlide(1)">
+                    <img src="./img/02.webp" alt="">
+                </div>
+                <div class="thumbnail" @click="changeSlide(2)">
+                    <img src="./img/03.webp" alt="">
+                </div>
+                <div class="thumbnail" @click="changeSlide(3)">
+                    <img src="./img/04.webp" alt="">
+                </div>
+                <div class="thumbnail" @click="changeSlide(4)">
+                    <img src="./img/05.webp" alt="">
+                </div>
+            </section>
             <button @click="nextImg">Next</button>
         </div>
-
+            
     </div>
 
     <script src='https://unpkg.com/vue@3/dist/vue.global.js'></script>
