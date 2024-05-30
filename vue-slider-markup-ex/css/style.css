@@ -39,7 +39,15 @@ body{
     bottom: 20px;
     text-align: right;
     color: white;
+    background-color: rgba(0, 0, 0, 0.329);
+    margin-left: 1rem;
+    border-radius: 0.75rem;
     
+}
+
+h3,
+p {
+    margin-right: 1rem;
 }
 
 button.prev {
