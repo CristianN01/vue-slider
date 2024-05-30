@@ -28,6 +28,8 @@ createApp({
               }
           ],
           currentSlide: 0,
+
+          autoPlayClock: null
         }
     },
     methods: {
@@ -47,6 +49,17 @@ createApp({
         },
         changeSlide: function(slideIndex) {
             this.currentSlide = slideIndex;
+        },
+        startAutoPlay: function(){
+            this.autoPlayClock = setInterval( this.nextImg, 5000);
+            console.log('autoplay started')
+        },
+        stopAutoPlay: function(){
+            clearInterval(this.autoPlayClock);
+            console.log('autoplay stopped')
         }
+    },
+    created(){
+         this.startAutoPlay();
     }
   }).mount('#app')
